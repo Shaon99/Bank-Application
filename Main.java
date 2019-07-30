@@ -31,7 +31,7 @@ public class Main {
             panel.setBackground(Color.DARK_GRAY);
             panel.setLayout(new FlowLayout());
             jf.add(panel);
-            panel.add(B);
+            panel.add(B);       //some sql and gui aplly
             jf.setSize(400, 400);
             jf.setVisible(true);
             jf.setResizable(false);
@@ -135,3 +135,4 @@ catch (Exception e){}
     }
 }
 
+//this is not complete project further thing have to be done
