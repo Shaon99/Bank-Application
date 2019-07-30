@@ -10,7 +10,7 @@ public class Account {
 
     public Account(String name, String DOB, String nominee) {
         this.name = name;
-        this.ID = IDGENARATOR.generate();
+        this.ID = IDGENARATOR.generate();//id automatic
         this.DOB = DOB;
         this.nominee = nominee;
     }
