@@ -3,7 +3,7 @@ public class Bank {
     private int count;
 
     public Bank() {
-        debitAccounts = new DebitAccount[100];
+        debitAccounts = new DebitAccount[100]; //debit account objcts
         count = 0;
     }
 
@@ -11,7 +11,7 @@ public class Bank {
         DebitAccount debitAccount = new DebitAccount(name, DOB, nominee);
         debitAccounts[count] = debitAccount;
         count++;
-        debitAccount.getID();
+        debitAccount.getID();   //creat account and output id too
         return "";
     }
 
