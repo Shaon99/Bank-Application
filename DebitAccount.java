@@ -4,7 +4,7 @@ public class DebitAccount extends Account {
     private final double MAX_BALANCE = 100000;
     private double transactionLimit = 20000;
     public DebitAccount() {
-        super();
+        super();  //this constructor call account cns
     }
 
     public DebitAccount(String name, String DOB, String nominee) {
@@ -23,7 +23,7 @@ public class DebitAccount extends Account {
     public boolean withdraw(double amount) {
         Calendar calendar = Calendar.getInstance();
         if (IDGENARATOR.currentMonth.get(Calendar.DATE) < calendar.get(Calendar.DATE)){
-            IDGENARATOR.currentMonth = Calendar.getInstance();
+            IDGENARATOR.currentMonth = Calendar.getInstance();  //if the id match for the account than withdraw sucess
             this.transactionLimit = 20000;
         }
         this.transactionLimit -= amount;
