@@ -1,8 +1,8 @@
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.Date; 
 
-public class IDGENARATOR {
+public class IDGENARATOR {   //id will generate automaticly yyyy-currentmonth-serial like 2019-07-00001
     static int serial_no;
     static Calendar currentMonth;
     private static String numberFormat(int num){
